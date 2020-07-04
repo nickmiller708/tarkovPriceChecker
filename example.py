@@ -54,7 +54,7 @@ def Execute(data):
 		for item in items: 
 			insertMessage = "item name: %in | average price: %price"
 			insertMessage.replace("%in", item['enName'])
-			insertMessage.replace("price", item['avgDayPrice'])
+			insertMessage.replace("%price", item['avgDayPrice'])
 			outputMessage += insertMessage
 
 		Parent.SendStreamMessage(outputMessage)
